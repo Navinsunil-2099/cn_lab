@@ -1,0 +1,41 @@
+Server Terminal
+
+
+Client Terminal-1 
+
+[navin@fedora] ~/c/exp5_concurrent_file_server λ gcc client.c
+[navin@fedora] ~/c/exp5_concurrent_file_server λ ./a.out
+Connected to server
+Enter filename: hello.c
+recv:71
+51277 SUCCESS hello.c
+"hey, this is just a file for testing"
+byeeeeeee
+recv:0
+
+
+Client Terminal-2 
+
+[navin@fedora] ~/c/exp5_concurrent_file_server λ gcc client.c
+[navin@fedora] ~/c/exp5_concurrent_file_server λ ./a.out
+Connected to server
+Enter filename: kitty.txt
+recv:24
+51277 SUCCESS kitty.txt
+recv:98
+font_family JetBrainsMono Nerd Font
+font_size 11.0
+enable_audio_bell no
+confirm_os_window_close 0
+recv:0
+
+
+Client Terminal-3 
+
+[navin@fedora] ~/c/exp5_concurrent_file_server λ gcc client.c
+[navin@fedora] ~/c/exp5_concurrent_file_server λ ./a.out
+Connected to server
+Enter filename: book.c
+recv:19
+51277 ERROR book.c
+recv:0

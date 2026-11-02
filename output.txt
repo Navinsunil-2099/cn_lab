@@ -1,0 +1,18 @@
+Server Terminal
+
+[navin@fedora] ~/cn λ gcc server.c
+[navin@fedora] ~/cn λ ./a.out
+Server listening on port 9999...
+Client connected
+Client disconnected
+
+
+Client Terminal
+
+[navin@fedora] ~/cn λ ./a.out
+Enter N: 3
+Enter matrix:
+Row 1: 1 2 3
+Row 2: 0 4 5
+Row 3: 0 0 6
+Result: Upper Triangular Matrix

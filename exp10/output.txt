@@ -1,0 +1,32 @@
+Server Terminal
+
+[navin@fedora] ~/c/exp10 λ gcc tcpserver.c -pthread
+[navin@fedora] ~/c/exp10 λ ./a.out
+Client 0 connectedClient 0 disconnected
+Client 1 connectedClient 1 disconnected
+Client 2 connectedClient 2 disconnected
+
+Client Terminal-0 
+
+[navin@fedora] ~/c/exp10 λ gcc client.c -pthread
+[navin@fedora] ~/c/exp10 λ ./a.out 
+hello welcome to the chat
+hi i'm client 0
+Client 1: hi i'm client 1
+Client 2: hi i'm client 2
+
+Client Terminal-1 
+
+[navin@fedora] ~/c/exp10 λ ./a.out
+hello welcome to the chat
+Client 0: hi i'm client 0
+hi i'm client 1
+Client 2: hi i'm client 2
+
+Client Terminal-2 
+
+[navin@fedora] ~/c/exp10 λ ./a.out
+hello welcome to the chat
+Client 0: hi i'm client 0
+Client 1: hi i'm client 1
+hi i'm client 2
